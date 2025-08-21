@@ -2,46 +2,172 @@
 <html lang="ko">
 <head>
   <meta charset="UTF-8" />
-  <title>이용약관</title>
+  <title>개인정보 처리방침 & 이용약관</title>
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <script src="https://cdn.tailwindcss.com"></script>
-  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR&family=Noto+Sans&display=swap" rel="stylesheet" />
   <style>
-    body {
-      font-family: 'Noto Sans KR', sans-serif;
-    }
+    body { font-family: 'Noto Sans KR', 'Noto Sans', sans-serif; }
+    .hidden { display: none; }
   </style>
 </head>
 <body class="bg-gray-50 text-gray-800">
   <main class="max-w-3xl mx-auto px-6 py-10 bg-white border border-gray-200 shadow rounded-lg leading-relaxed">
-    
-    <h1 class="text-3xl font-bold text-blue-800 mb-6 border-b pb-2">이용약관</h1>
 
-    <p class="mb-4">본 애플리케이션을 이용해주셔서 감사합니다.</p>
-    <p class="mb-8">아래는 본 애플리케이션의 이용약관입니다.</p>
+    <!-- 언어 선택 -->
+    <div class="flex justify-end mb-6">
+      <button id="btn-ko" class="px-4 py-2 text-sm font-semibold text-white bg-blue-600 rounded-l hover:bg-blue-700">한국어</button>
+      <button id="btn-en" class="px-4 py-2 text-sm font-semibold text-white bg-gray-600 rounded-r hover:bg-gray-700">English</button>
+    </div>
 
-    <section class="mb-8">
-      <h2 class="text-xl font-semibold text-gray-700 mb-2">제1조 (목적)</h2>
-      <p>이 약관은 사용자와 본 앱 제공자 간의 권리, 의무 및 책임사항을 규정함을 목적으로 합니다.</p>
-    </section>
+    <!-- 한국어 버전 -->
+    <div id="content-ko">
+      <!-- 개인정보 처리방침 -->
+      <h1 class="text-3xl font-bold text-blue-800 mb-6 border-b pb-2">개인정보 처리방침</h1>
+      <p class="mb-6">본 애플리케이션은 사용자의 개인정보를 매우 중요하게 생각하며, 관련 법령을 준수합니다. 본 정책은 앱 사용과 관련된 개인정보 처리 방침을 안내합니다.</p>
 
-    <section class="mb-8">
-      <h2 class="text-xl font-semibold text-gray-700 mb-2">제2조 (서비스의 제공)</h2>
-      <p>본 앱은 여행 일정 관리 기능을 제공합니다. 단, 기술적 사유로 일시 중단될 수 있습니다.</p>
-    </section>
+      <section class="mb-8">
+        <h2 class="text-xl font-semibold text-gray-700 mb-2">1. 수집하는 개인정보 항목</h2>
+        <p>본 앱은 회원가입, 로그인 기능을 제공하지 않으며, 사용자의 직접적인 개인정보를 수집하지 않습니다.</p>
+      </section>
 
-    <section class="mb-8">
-      <h2 class="text-xl font-semibold text-gray-700 mb-2">제3조 (사용자의 의무)</h2>
-      <p>사용자는 법령과 본 약관을 준수하여야 하며, 타인의 권리를 침해하거나 앱의 운영을 방해해서는 안 됩니다.</p>
-    </section>
+      <section class="mb-8">
+        <h2 class="text-xl font-semibold text-gray-700 mb-2">2. 자동으로 수집되는 정보</h2>
+        <ul class="list-disc pl-6 mt-2">
+          <li>앱 사용 로그 (오류 로그, 사용 빈도 등)</li>
+          <li>기기 정보 (운영체제 버전, 단말기 모델명, 앱 버전 등)</li>
+          <li>광고 식별자 (ADID/IDFA 등, 광고 제공 시)</li>
+        </ul>
+      </section>
 
-    <section class="mb-8">
-      <h2 class="text-xl font-semibold text-gray-700 mb-2">제4조 (기타)</h2>
-      <p>본 약관은 사전 고지 없이 변경될 수 있으며, 변경 시 앱 또는 웹사이트를 통해 공지됩니다.</p>
-    </section>
+      <section class="mb-8">
+        <h2 class="text-xl font-semibold text-gray-700 mb-2">3. 개인정보의 이용 목적</h2>
+        <p>본 앱은 직접적인 개인정보를 수집하지 않으며, 자동으로 수집되는 정보는 서비스 개선, 오류 분석, 광고 제공 목적 등으로 활용될 수 있습니다.</p>
+      </section>
 
-    <p class="text-sm text-gray-500 mt-10 border-t pt-4">최종 수정일: 2025년 7월 30일</p>
+      <section class="mb-8">
+        <h2 class="text-xl font-semibold text-gray-700 mb-2">4. 제3자 제공 및 외부 서비스 이용</h2>
+        <ul class="list-disc pl-6 mt-2">
+          <li>Google AdMob (광고 제공)</li>
+          <li>Firebase Analytics (사용 통계 및 분석)</li>
+          <li>Crashlytics (앱 오류 보고)</li>
+        </ul>
+      </section>
 
+      <p class="text-sm text-gray-500 mt-10 border-t pt-4">최종 수정일: 2025년 7월 30일</p>
+
+      <!-- 이용약관 -->
+      <h1 class="text-3xl font-bold text-blue-800 mb-6 mt-16 border-b pb-2">이용약관</h1>
+      <p class="mb-4">본 애플리케이션을 이용해주셔서 감사합니다.</p>
+      <p class="mb-8">아래는 본 애플리케이션의 이용약관입니다.</p>
+
+      <section class="mb-8">
+        <h2 class="text-xl font-semibold text-gray-700 mb-2">제1조 (목적)</h2>
+        <p>이 약관은 사용자와 본 앱 제공자 간의 권리, 의무 및 책임사항을 규정함을 목적으로 합니다.</p>
+      </section>
+
+      <section class="mb-8">
+        <h2 class="text-xl font-semibold text-gray-700 mb-2">제2조 (서비스의 제공)</h2>
+        <p>본 앱은 여행 일정 관리 기능을 제공합니다. 단, 기술적 사유로 일시 중단될 수 있습니다.</p>
+      </section>
+
+      <section class="mb-8">
+        <h2 class="text-xl font-semibold text-gray-700 mb-2">제3조 (사용자의 의무)</h2>
+        <p>사용자는 법령과 본 약관을 준수하여야 하며, 타인의 권리를 침해하거나 앱의 운영을 방해해서는 안 됩니다.</p>
+      </section>
+
+      <section class="mb-8">
+        <h2 class="text-xl font-semibold text-gray-700 mb-2">제4조 (기타)</h2>
+        <p>본 약관은 사전 고지 없이 변경될 수 있으며, 변경 시 앱 또는 웹사이트를 통해 공지됩니다.</p>
+      </section>
+
+      <p class="text-sm text-gray-500 mt-10 border-t pt-4">최종 수정일: 2025년 7월 30일</p>
+    </div>
+
+    <!-- 영어 버전 -->
+    <div id="content-en" class="hidden">
+      <!-- Privacy Policy -->
+      <h1 class="text-3xl font-bold text-blue-800 mb-6 border-b pb-2">Privacy Policy</h1>
+      <p class="mb-6">This application values users’ personal information and complies with applicable laws and regulations. This policy explains how personal data is handled in connection with the use of this app.</p>
+
+      <section class="mb-8">
+        <h2 class="text-xl font-semibold text-gray-700 mb-2">1. Information Collected</h2>
+        <p>This app does not provide sign-up or login features and does not collect any personally identifiable information directly from users.</p>
+      </section>
+
+      <section class="mb-8">
+        <h2 class="text-xl font-semibold text-gray-700 mb-2">2. Information Collected Automatically</h2>
+        <ul class="list-disc pl-6 mt-2">
+          <li>App usage logs (error logs, usage frequency, etc.)</li>
+          <li>Device information (OS version, device model, app version, etc.)</li>
+          <li>Advertising identifiers (ADID/IDFA, when ads are displayed)</li>
+        </ul>
+      </section>
+
+      <section class="mb-8">
+        <h2 class="text-xl font-semibold text-gray-700 mb-2">3. Purpose of Use</h2>
+        <p>The app does not collect personal data directly. Automatically collected information may be used for service improvement, error analysis, and ad delivery.</p>
+      </section>
+
+      <section class="mb-8">
+        <h2 class="text-xl font-semibold text-gray-700 mb-2">4. Third-Party Services</h2>
+        <ul class="list-disc pl-6 mt-2">
+          <li>Google AdMob (advertising)</li>
+          <li>Firebase Analytics (usage statistics and analysis)</li>
+          <li>Crashlytics (error reporting)</li>
+        </ul>
+      </section>
+
+      <p class="text-sm text-gray-500 mt-10 border-t pt-4">Last updated: July 30, 2025</p>
+
+      <!-- Terms of Service -->
+      <h1 class="text-3xl font-bold text-blue-800 mb-6 mt-16 border-b pb-2">Terms of Service</h1>
+      <p class="mb-4">Thank you for using this application.</p>
+      <p class="mb-8">The following are the terms of service of this application.</p>
+
+      <section class="mb-8">
+        <h2 class="text-xl font-semibold text-gray-700 mb-2">Article 1 (Purpose)</h2>
+        <p>These Terms define the rights, obligations, and responsibilities between the user and the app provider.</p>
+      </section>
+
+      <section class="mb-8">
+        <h2 class="text-xl font-semibold text-gray-700 mb-2">Article 2 (Provision of Services)</h2>
+        <p>The app provides travel schedule management features. However, services may be temporarily suspended due to technical reasons.</p>
+      </section>
+
+      <section class="mb-8">
+        <h2 class="text-xl font-semibold text-gray-700 mb-2">Article 3 (User Obligations)</h2>
+        <p>Users must comply with laws and these Terms. Users shall not infringe on others’ rights or interfere with the operation of the app.</p>
+      </section>
+
+      <section class="mb-8">
+        <h2 class="text-xl font-semibold text-gray-700 mb-2">Article 4 (Miscellaneous)</h2>
+        <p>These Terms may be changed without prior notice, and changes will be announced via the app or website.</p>
+      </section>
+
+      <p class="text-sm text-gray-500 mt-10 border-t pt-4">Last updated: July 30, 2025</p>
+    </div>
   </main>
+
+  <script>
+    const btnKo = document.getElementById('btn-ko');
+    const btnEn = document.getElementById('btn-en');
+    const contentKo = document.getElementById('content-ko');
+    const contentEn = document.getElementById('content-en');
+
+    btnKo.addEventListener('click', () => {
+      contentKo.classList.remove('hidden');
+      contentEn.classList.add('hidden');
+      btnKo.classList.replace('bg-gray-600', 'bg-blue-600');
+      btnEn.classList.replace('bg-blue-600', 'bg-gray-600');
+    });
+
+    btnEn.addEventListener('click', () => {
+      contentKo.classList.add('hidden');
+      contentEn.classList.remove('hidden');
+      btnEn.classList.replace('bg-gray-600', 'bg-blue-600');
+      btnKo.classList.replace('bg-blue-600', 'bg-gray-600');
+    });
+  </script>
 </body>
 </html>
